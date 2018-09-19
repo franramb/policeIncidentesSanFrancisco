@@ -42,20 +42,3 @@ addArtifact(artifact in (Compile, assembly), assembly)
 
 sources in (Compile,doc) := Seq.empty
 publishArtifact in (Compile, packageDoc) := false
-
-//credentials += Credentials(Path.userHome / ".ivy2" / ".credentials")
-//
-//resolvers += "Nexus-Snapshot" at "http://104.154.138.29:8081/repository/maven-snapshots/"
-//resolvers += "Nexus-Releases" at "http://104.154.138.29:8081/repository/maven-releases/"
-//
-//publishTo := {
-//
-//  val nexus = "http://104.154.138.29:8081/"
-//
-//  if (version.value.trim.endsWith("SNAPSHOT")) {
-//    Some("snapshots" at nexus + "repository/maven-snapshots/")
-//  } else {
-//    Some("releases" at nexus + "repository/maven-releases/")
-//  }
-//
-//}
